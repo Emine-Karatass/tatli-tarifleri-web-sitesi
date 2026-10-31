@@ -1,8 +1,12 @@
+* {
+    box-sizing: border-box;
+}
 :root {
     --primary-color: #3b2f2f;
     --accent-color: #d8d0bf;
     --baglanti-renk: #3b2f2f;
-
+    --kenar: #bfb59f;
+    --vurgu-renk: #b36220;
 }
 
 body {
@@ -10,6 +14,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
+  
      }
 
 h1,h2{
@@ -18,3 +23,32 @@ h1,h2{
 a {
     color: var(--baglanti-renk);
 }
+a:hover{
+    color: var(--vurgu-renk);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+caption{
+    text-align:left
+    font-weight:bold;
+    margin-bottom: 8px;
+}
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--kenar);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent-color);
+}
+
